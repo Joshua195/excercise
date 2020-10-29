@@ -1,0 +1,9 @@
+<mat-toolbar class="header">
+  <div class="title">
+    <button class="title-button" mat-mini-fab (click)="openMenu()">
+      <mat-icon *ngIf="!isMenuOpened" class="title-button-icon">menu</mat-icon>
+      <mat-icon *ngIf="isMenuOpened" class="title-button-icon">arrow_back</mat-icon>
+    </button>
+    <h6 class="title-text">Arkusnexus Art Store</h6>
+  </div>
+</mat-toolbar>

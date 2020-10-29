@@ -1,0 +1,32 @@
+.mat-list-base {
+  border-bottom: 1px solid #D8D8D880;
+  width: 210px;
+  padding-bottom: 16px;
+
+  &.mat-list-item {
+    display: flex;
+    cursor: pointer;
+    color: rgba(110, 110, 110, 0.8);
+    width: auto;
+    padding-left: 4px;
+
+    &.active {
+      color: #4A4A4A;
+      background-color: #F3F5FF;
+      outline: none;
+
+      &.mat-icon {
+        color: black;
+      }
+    }
+  }
+}
+
+.mat-list-base .mat-list-item.ui-element {
+  padding-left: 40px;
+}
+
+.mat-icon {
+  margin-right: 15px;
+  color: rgba(110, 110, 110, 0.6);
+}

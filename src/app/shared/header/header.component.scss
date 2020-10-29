@@ -1,0 +1,28 @@
+.header {
+  background-color: #6E6E6E;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 2;
+  height: 64px;
+
+  .title-button {
+    background-color: #6E6E6E;
+    box-shadow: none;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+  }
+
+  .title-button-icon {
+    color: black;
+  }
+
+  .title-text {
+    color: black;
+    margin-left: 10px;
+    font-weight: 500;
+  }
+}
