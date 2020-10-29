@@ -13,6 +13,11 @@ const routes: Routes = [
     pathMatch: 'full',
     component: DashboardPageComponent
   },
+  {
+    path: 'admin',
+    pathMatch: 'full',
+    loadChildren: () => import('./pages/admin/admin.module').then(m => m.AdminModule)
+  }
 ];
 
 @NgModule({
