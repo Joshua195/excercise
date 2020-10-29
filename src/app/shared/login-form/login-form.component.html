@@ -1,0 +1,16 @@
+<h2 mat-dialog-title>Login</h2>
+<mat-dialog-content class="mat-typography">
+  <form class="form" [formGroup]="form" (ngSubmit)="login()">
+    <mat-form-field class="input">
+      <input matInput placeholder="Email Address" type="email" formControlName="email">
+    </mat-form-field>
+
+    <mat-form-field class="input">
+      <input matInput placeholder="Password" type="password" formControlName="password">
+    </mat-form-field>
+
+    <div class="form-actions">
+      <button class="login" mat-raised-button color="primary" type="submit">Login</button>
+    </div>
+  </form>
+</mat-dialog-content>

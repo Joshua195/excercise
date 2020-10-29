@@ -6,4 +6,21 @@
     </button>
     <h6 class="title-text">Arkusnexus Art Store</h6>
   </div>
+  <div class="header-toolbar">
+    <mat-icon *ngIf="user" class="title-button-icon">face</mat-icon> <span class="username">{{ username }}</span>
+    <button
+      *ngIf="!user"
+      mat-icon-button
+      matTooltip="Log in"
+      (click)="openDialog()">
+      <mat-icon class="title-button-icon">account_circle</mat-icon>
+    </button>
+    <button
+      *ngIf="user"
+      mat-icon-button
+      matTooltip="Log out"
+      (click)="signOut()">
+      <mat-icon class="title-button-icon">login</mat-icon>
+    </button>
+  </div>
 </mat-toolbar>
