@@ -1,8 +1,10 @@
-<mat-nav-list>
-  <mat-list-item routerLink="{{routes.DASHBOARD}}" routerLinkActive="active">
-    <mat-icon>home</mat-icon> Products
-  </mat-list-item>
-  <mat-list-item routerLink="{{routes.ADMIN}}" routerLinkActive="active">
-    <mat-icon>admin_panel_settings</mat-icon> Admin
-  </mat-list-item>
-</mat-nav-list>
+<div class="test">
+  <mat-nav-list>
+    <mat-list-item routerLink="{{routes.DASHBOARD}}" routerLinkActive="active">
+      <mat-icon>home</mat-icon> Products
+    </mat-list-item>
+    <mat-list-item *ngIf="user?.isAdmin" routerLink="{{routes.ADMIN}}" routerLinkActive="active">
+      <mat-icon>admin_panel_settings</mat-icon> Admin
+    </mat-list-item>
+  </mat-nav-list>
+</div>
